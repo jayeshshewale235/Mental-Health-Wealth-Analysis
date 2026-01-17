@@ -1,38 +1,35 @@
-# Mental-Health-Wealth-Analysis
+Mental Health & Global Wealth: A Multi-Level Data Analysis
+📌 Project Overview
+This project investigates the relationship between economic development and mental health. By utilizing a "Macro-to-Micro" approach, I analyze global prevalence rates across nations (2019) alongside individual behavioral survey data (290,000+ responses) to uncover the hidden drivers of mental well-being.
 
-## 📌 Project Overview
-This project explores the intersection of economic development and mental health through two distinct lenses:
-1. **Macro Perspective:** Analyzing global prevalence rates of mental disorders across 50+ countries in relation to GDP.
-2. **Micro Perspective:** Analyzing behavioral survey data from 290,000+ individuals to identify workplace and lifestyle triggers.
+📂 Data Sources
+Global_Mental_Health_vs_GDP_2019.csv: Country-level statistics on GDP and prevalence of 5 major mental disorders.
 
-## 📊 Key Dashboards & Insights
+Mental_Health_Behavioral_Survey.csv: Individual-level data regarding workplace stress, treatment history, and lifestyle habits.
 
-### 1. The Global Burden (Top 10 Countries)
-- **Focus:** Identifies the nations with the highest cumulative mental health burden.
-- **Insight:** Highlights that mental health issues are a significant challenge in highly developed nations.
+📊 Key Dashboards & Insights
+The following visualizations (located in the /outputs folder) tell the story of my findings:
 
-### 2. The Wealth Paradox (GDP vs. Depression)
-- **Focus:** Correlation between national wealth (GDP per capita) and depression rates.
-- **Insight:** Uncovers a positive correlation, suggesting that as countries develop, reported mental health challenges tend to increase.
+1. Global Prevalence Ranking
+Insight: Identifies the top 10 countries by total mental health burden. It highlights that high-income nations often report the highest cumulative prevalence rates.
 
-### 3. The Treatment Gap (Gender & Behavior)
-- **Focus:** Help-seeking behavior across different genders and those with family histories.
-- **Insight:** Identifies social stigmas and barriers to treatment.
+2. Wealth vs Depression Paradox
+Insight: A regression analysis showing the positive correlation between GDP and Depression. This "Wealth Paradox" suggests that economic growth does not automatically lead to better mental health outcomes.
 
-### 4. Occupational Stress & The "Indoor Effect"
-- **Focus:** Impact of job types and physical environment (time spent indoors) on mood stability.
-- **Insight:** Shows a direct link between prolonged isolation and increased mood swings.
+3. Gender Treatment Gap
+Insight: Explores the social barriers to mental health care. The data reveals significant differences in treatment-seeking behavior between genders.
 
-### 5. The Symptom Correlation Matrix
-- **Focus:** Statistical link between Anxiety, Depression, and other disorders.
-- **Insight:** Proves the high comorbidity between different mental health conditions.
+4. Indoor Time vs Mood Stability
+Insight: A behavioral deep-dive showing how physical isolation (time spent indoors) directly impacts the frequency and severity of mood swings.
 
-## 🛠️ Tech Stack
-- **Python:** Data cleaning and Exploratory Data Analysis (EDA).
-- **Pandas:** For data manipulation and feature engineering.
-- **Matplotlib & Seaborn:** For high-quality data visualization.
-- **Google Colab:** Cloud-based development environment.
+5. Disorder Correlation Matrix
+Insight: A statistical heatmap demonstrating the high comorbidity between Anxiety and Depression, providing a clinical view of how these disorders overlap globally.
 
-## 📂 Datasets
-- **Global Wealth Data (2019):** Aggregated prevalence rates and economic indicators.
-- **Mental Health Behavioral Survey (2014):** 292k+ individual responses regarding workplace stress and habits.
+🛠️ Technical Implementation
+This project was developed using Python in a Google Colab environment.
+
+Data Cleaning: Handled missing values and standardized Timestamp columns into Date formats.
+
+EDA: Utilized Pandas for aggregation and Seaborn for advanced statistical visualization.
+
+Correlation Analysis: Performed Pearson correlation to understand the links between economic wealth and health metrics.
